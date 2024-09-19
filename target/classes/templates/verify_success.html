@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<th:block th:if="${verificationMsg}">
+		<center>
+			<h1>[[${verificationMsg}]]<h1>
+		</center>
+	</th:block>
+	
+</body>
+</html>

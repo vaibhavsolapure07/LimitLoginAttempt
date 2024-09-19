@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::title},~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<section class = "text-center">
+	
+		<h1>ADMIN Profile Page</h1>
+		<th:block th:if="${user}">
+			<h4>ID: [[${user.id}]]</h4>
+			<h4>Name: [[${user.name}]]</h4>
+			<h4>Email: [[${user.email}]]</h4>
+			<h4>Role: [[${user.role}]]</h4>
+			<h4>MobileNo: [[${user.mobileNo}]]</h4>
+		</th:block>
+		<a href = "/logout">Logout</a>
+	</section>
+
+</body>
+</html>
